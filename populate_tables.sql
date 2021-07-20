@@ -503,4 +503,84 @@ COPY cpc_subsection
     DELIMITER E'\t'
     CSV HEADER;
 
+COPY detail_desc_text_1976
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1976.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1977
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1977.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1978
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1978.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1979
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1979.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1980
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1980.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1981
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1981.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1982
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1982.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1983
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1983.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1984
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1984.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1985
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1985.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1986
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1986.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1987
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1987.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1988
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1988.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+COPY detail_desc_text_1989
+    FROM '/home/brandon/Documents/patentsview/unzipped/detail_desc_text_1989.tsv'
+    DELIMITER E'\t'
+    CSV HEADER;
+
+
+
+
+
+
+
+
+
+
+
 

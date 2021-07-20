@@ -756,7 +756,7 @@ CREATE TABLE claims_2005
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2006
@@ -770,7 +770,7 @@ CREATE TABLE claims_2006
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2007
@@ -784,7 +784,7 @@ CREATE TABLE claims_2007
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2008
@@ -798,7 +798,7 @@ CREATE TABLE claims_2008
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2009
@@ -812,7 +812,7 @@ CREATE TABLE claims_2009
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2010
@@ -826,7 +826,7 @@ CREATE TABLE claims_2010
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2011
@@ -840,7 +840,7 @@ CREATE TABLE claims_2011
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2012
@@ -854,7 +854,7 @@ CREATE TABLE claims_2012
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2013
@@ -868,7 +868,7 @@ CREATE TABLE claims_2013
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2014
@@ -882,7 +882,7 @@ CREATE TABLE claims_2014
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2015
@@ -896,7 +896,7 @@ CREATE TABLE claims_2015
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2016
@@ -910,7 +910,7 @@ CREATE TABLE claims_2016
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2017
@@ -924,7 +924,7 @@ CREATE TABLE claims_2017
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2018
@@ -938,7 +938,7 @@ CREATE TABLE claims_2018
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2019
@@ -952,7 +952,7 @@ CREATE TABLE claims_2019
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date,
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2020
@@ -966,7 +966,7 @@ CREATE TABLE claims_2020
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 CREATE TABLE claims_2021
@@ -980,14 +980,14 @@ CREATE TABLE claims_2021
     exemplary    bigint,
     patent_date  date,
     created_date varchar(20), -- bc empty, throws error if date
-    updated_date varchar(20) -- bc empty, throws error if date
+    updated_date varchar(20)  -- bc empty, throws error if date
 );
 
 /* */
 
 CREATE TABLE cpc_current
 (
-    uuid          varchar(36) PRIMARY KEY ,
+    uuid          varchar(36) PRIMARY KEY,
     patent_id     varchar(20),
     section_id    varchar(10),
     subsection_id varchar(20),
@@ -999,19 +999,19 @@ CREATE TABLE cpc_current
 
 CREATE TABLE cpc_group
 (
-    id    varchar(20) PRIMARY KEY ,
+    id    varchar(20) PRIMARY KEY,
     title varchar(512)
 );
 
 CREATE TABLE cpc_subgroup
 (
-    id    varchar(20) PRIMARY KEY ,
+    id    varchar(20) PRIMARY KEY,
     title text
 );
 
 CREATE TABLE cpc_subsection
 (
-    id    varchar(20) PRIMARY KEY ,
+    id    varchar(20) PRIMARY KEY,
     title varchar(512)
 );
 
@@ -1019,13 +1019,15 @@ CREATE TABLE cpc_subsection
 
 CREATE TABLE detail_desc_text_1976
 (
-    patent_id varchar(20) PRIMARY KEY ,
+    uuid      varchar(36) PRIMARY KEY,
+    patent_id varchar(20),
     text      text,
     length    int
 );
 
 CREATE TABLE detail_desc_text_1977
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1033,6 +1035,7 @@ CREATE TABLE detail_desc_text_1977
 
 CREATE TABLE detail_desc_text_1978
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1040,6 +1043,7 @@ CREATE TABLE detail_desc_text_1978
 
 CREATE TABLE detail_desc_text_1979
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1047,6 +1051,7 @@ CREATE TABLE detail_desc_text_1979
 
 CREATE TABLE detail_desc_text_1980
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1054,6 +1059,7 @@ CREATE TABLE detail_desc_text_1980
 
 CREATE TABLE detail_desc_text_1981
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1061,6 +1067,7 @@ CREATE TABLE detail_desc_text_1981
 
 CREATE TABLE detail_desc_text_1982
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1068,6 +1075,7 @@ CREATE TABLE detail_desc_text_1982
 
 CREATE TABLE detail_desc_text_1983
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1075,6 +1083,7 @@ CREATE TABLE detail_desc_text_1983
 
 CREATE TABLE detail_desc_text_1984
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1082,6 +1091,7 @@ CREATE TABLE detail_desc_text_1984
 
 CREATE TABLE detail_desc_text_1985
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1089,6 +1099,7 @@ CREATE TABLE detail_desc_text_1985
 
 CREATE TABLE detail_desc_text_1986
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1096,6 +1107,7 @@ CREATE TABLE detail_desc_text_1986
 
 CREATE TABLE detail_desc_text_1987
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1103,6 +1115,7 @@ CREATE TABLE detail_desc_text_1987
 
 CREATE TABLE detail_desc_text_1988
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1110,6 +1123,7 @@ CREATE TABLE detail_desc_text_1988
 
 CREATE TABLE detail_desc_text_1989
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1117,6 +1131,7 @@ CREATE TABLE detail_desc_text_1989
 
 CREATE TABLE detail_desc_text_1990
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1124,6 +1139,7 @@ CREATE TABLE detail_desc_text_1990
 
 CREATE TABLE detail_desc_text_1991
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1131,6 +1147,7 @@ CREATE TABLE detail_desc_text_1991
 
 CREATE TABLE detail_desc_text_1992
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1138,6 +1155,7 @@ CREATE TABLE detail_desc_text_1992
 
 CREATE TABLE detail_desc_text_1993
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1145,6 +1163,7 @@ CREATE TABLE detail_desc_text_1993
 
 CREATE TABLE detail_desc_text_1994
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1152,6 +1171,7 @@ CREATE TABLE detail_desc_text_1994
 
 CREATE TABLE detail_desc_text_1995
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1159,6 +1179,7 @@ CREATE TABLE detail_desc_text_1995
 
 CREATE TABLE detail_desc_text_1996
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1166,6 +1187,7 @@ CREATE TABLE detail_desc_text_1996
 
 CREATE TABLE detail_desc_text_1997
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1173,6 +1195,7 @@ CREATE TABLE detail_desc_text_1997
 
 CREATE TABLE detail_desc_text_1998
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1180,6 +1203,7 @@ CREATE TABLE detail_desc_text_1998
 
 CREATE TABLE detail_desc_text_1999
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1187,6 +1211,7 @@ CREATE TABLE detail_desc_text_1999
 
 CREATE TABLE detail_desc_text_2000
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1194,6 +1219,7 @@ CREATE TABLE detail_desc_text_2000
 
 CREATE TABLE detail_desc_text_2001
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1201,6 +1227,7 @@ CREATE TABLE detail_desc_text_2001
 
 CREATE TABLE detail_desc_text_2002
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1208,6 +1235,7 @@ CREATE TABLE detail_desc_text_2002
 
 CREATE TABLE detail_desc_text_2003
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1215,6 +1243,7 @@ CREATE TABLE detail_desc_text_2003
 
 CREATE TABLE detail_desc_text_2004
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1222,6 +1251,7 @@ CREATE TABLE detail_desc_text_2004
 
 CREATE TABLE detail_desc_text_2005
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1229,6 +1259,7 @@ CREATE TABLE detail_desc_text_2005
 
 CREATE TABLE detail_desc_text_2006
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1236,6 +1267,7 @@ CREATE TABLE detail_desc_text_2006
 
 CREATE TABLE detail_desc_text_2007
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1243,6 +1275,7 @@ CREATE TABLE detail_desc_text_2007
 
 CREATE TABLE detail_desc_text_2008
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1250,6 +1283,7 @@ CREATE TABLE detail_desc_text_2008
 
 CREATE TABLE detail_desc_text_2009
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1257,6 +1291,7 @@ CREATE TABLE detail_desc_text_2009
 
 CREATE TABLE detail_desc_text_2010
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1264,6 +1299,7 @@ CREATE TABLE detail_desc_text_2010
 
 CREATE TABLE detail_desc_text_2011
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1271,6 +1307,7 @@ CREATE TABLE detail_desc_text_2011
 
 CREATE TABLE detail_desc_text_2012
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1278,6 +1315,7 @@ CREATE TABLE detail_desc_text_2012
 
 CREATE TABLE detail_desc_text_2013
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1285,6 +1323,7 @@ CREATE TABLE detail_desc_text_2013
 
 CREATE TABLE detail_desc_text_2014
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1292,6 +1331,7 @@ CREATE TABLE detail_desc_text_2014
 
 CREATE TABLE detail_desc_text_2015
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1299,6 +1339,7 @@ CREATE TABLE detail_desc_text_2015
 
 CREATE TABLE detail_desc_text_2016
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1306,6 +1347,7 @@ CREATE TABLE detail_desc_text_2016
 
 CREATE TABLE detail_desc_text_2017
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1313,6 +1355,7 @@ CREATE TABLE detail_desc_text_2017
 
 CREATE TABLE detail_desc_text_2018
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1320,6 +1363,7 @@ CREATE TABLE detail_desc_text_2018
 
 CREATE TABLE detail_desc_text_2019
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1327,6 +1371,7 @@ CREATE TABLE detail_desc_text_2019
 
 CREATE TABLE detail_desc_text_2020
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
@@ -1334,6 +1379,7 @@ CREATE TABLE detail_desc_text_2020
 
 CREATE TABLE detail_desc_text_2021
 (
+    uuid      varchar(36) PRIMARY KEY,
     patent_id varchar(20),
     text      text,
     length    int
